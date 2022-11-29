@@ -1,5 +1,5 @@
 ###################
-Hasil Pemetaan Potensi Tanaman Padi di Kabupaten Sragen dengan Metode K-Means Clustering - aiscoder.com
+Hasil Pemetaan Potensi Tanaman Padi Buah Kabupaten Sragen dengan Metode K-Means Clustering - aiscoder.com
 ###################
 
 *********************
