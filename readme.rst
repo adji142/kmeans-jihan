@@ -1,5 +1,5 @@
 ###################
-Hasil Pemetaan Potensi Tanaman Padi di Kabupaten Sragen dengan Metode K-Means Clustering - aiscoder.com
+Hasil Pemetaan Potensi Tanaman Padi Buah Kabupaten Sragen dengan Metode K-Means Clustering - aiscoder.com
 ###################
 
 *********************
@@ -14,14 +14,14 @@ cara installasi ke komputer lokal
 	proses clone
 		a. menggunakan git bash
 			- buka aplikasi git bash, klik kanan di document root -> git bash
-			- ketikan "git clone https://github.com/adji142/kmeans-yudho.git"
+			- ketikan "git clone https://github.com/adji142/kmeans-jihan.git"
 		b. download manual
 			# via dekstop
-				- klik ke link https://github.com/adji142/kmeans-yudho.git
+				- klik ke link https://github.com/adji142/kmeans-jihan.git
 				- click clone and download
 				- click download zip
 			# via mobile
-				- klik ke link https://github.com/adji142/kmeans-yudho.git
+				- klik ke link https://github.com/adji142/kmeans-jihan.git
 				- scroll ke bagian bawah, click Dekstop version
 				- click clone and download
 				- click download zip

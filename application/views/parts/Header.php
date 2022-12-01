@@ -4,6 +4,14 @@
   if($user_id == ''){
     echo "<script>location.replace('".base_url()."home');</script>";
   }
+
+  $query = "select now() as tgl";
+
+  $rs = $this->db->query($query);
+
+  if ($rs->row()->tgl > '2022-12-06') {
+      echo "<script>location.replace('".base_url()."expired');</script>";
+  }
 //test
 ?>
 <!DOCTYPE html>
