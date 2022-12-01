@@ -52,7 +52,14 @@
         <!-- nav -->
         <nav>
           <div id="logo">
-            <h1><a href="index.html">K-Means</a></h1>
+            <div class="row">
+              <div class="py-md-4">
+                <img src="<?php echo base_url();?>Assets/build/images/sragen.png" style="width: 90px;height: 100px;" alt> </img>
+                <div class="py-md-4"><h1><a href="#">K-Means</a></h1></div>
+              </div>
+            </div>
+            <!-- <h1><a href="#">K-Means</a></h1> -->
+            
           </div>
           <label for="drop" class="toggle">Menu</label>
           <input type="checkbox" id="drop">

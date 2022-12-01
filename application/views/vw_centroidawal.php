@@ -18,6 +18,20 @@
                   </div>
                   <div class="x_content">
                       <div class="dx-viewport demo-container">
+                         <div class="item form-group">
+                          <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Panen Buah<span class="required">*</span>
+                          </label>
+                          <div class="col-md-3 col-sm-3 ">
+                            <!-- <input type="number" name="Pekerjaan" id="Pekerjaan" required="" placeholder="Pekerjaan" class="form-control " step="0.0001"> -->
+                            <select name="Kelompok" id="Kelompok" class="form-control">
+                              <option value="MANGGA">MANGGA</option>
+                              <option value="PEPAYA">PEPAYA</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3 col-sm-3 ">
+                            <button class="btn btn-primary" id="bt_Search">Search</button>
+                          </div>
+                        </div>
                         <div id="data-grid-demo">
                           <div id="gridContainer">
                           </div>
@@ -87,13 +101,25 @@
           $.ajax({
             type: "post",
             url: "<?=base_url()?>C_CentroidAwal/read",
-            data: {'id':''},
+            data: {'id':'','Kelompok':$('#Kelompok').val()},
             dataType: "json",
             success: function (response) {
               bindGrid(response.data);
             }
           });
 
+        });
+
+        $('#bt_Search').click(function () {
+          $.ajax({
+            type: "post",
+            url: "<?=base_url()?>C_CentroidAwal/read",
+            data: {'id':'','Kelompok':$('#Kelompok').val()},
+            dataType: "json",
+            success: function (response) {
+              bindGrid(response.data);
+            }
+          });
         });
         $('#post_').submit(function (e) {
           $('#btn_Save').text('Tunggu Sebentar.....');
@@ -222,20 +248,15 @@
                     allowEditing:false
                 },
                 {
-                    dataField: "Pekerjaan",
-                    caption: "Pekerjaan",
+                    dataField: "LuasPanen",
+                    caption: "Luas Panen",
                     allowEditing:false
                 },
                 {
-                    dataField: "Penghasilan",
-                    caption: "Penghasilan",
+                    dataField: "Produksi",
+                    caption: "Produksi",
                     allowEditing:false
                 },
-                {
-                    dataField: "Pendidikan",
-                    caption: "Pendidikan",
-                    allowEditing:false
-                }
             ],
             onEditingStart: function(e) {
                 GetData(e.data.id);
